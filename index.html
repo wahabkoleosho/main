@@ -1,142 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Nexas</title>
-    <link rel="stylesheet" href="PORTFOLIO.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My web</title>
+  <link rel="shortcut icon" href="check.png" type="image/x-icon">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html{
+      background: url(background.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    body{
+      width: 100%;
+      height: 100%; 
+    }
+    
+    .img_media_container{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-bottom: 0.5em;
+        margin-top: 1.5em;
+      }
+
+      img{
+        width: 100%;
+        overflow: hidden;
+      }
+    .media_con{
+      display: flex;
+      flex-direction: row;
+      position: static; 
+      margin-left: 1em;
+      padding: 0.3em;
+      gap: 0.5em;
+    }
+
+    header{
+      position: sticky;
+      top: 0;
+      background-color: goldenrod;
+      padding-bottom: 1em;
+    }
+
+    nav{
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+    .nav_list_container{
+      border-radius: 5px;
+    }
+    .list_container{
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      padding-top: 1em;
+    }
+
+    .menu{
+      color: white;
+      text-decoration: none;
+      font-family: Bahnschrift;
+    }
+    .menu:hover{
+      text-decoration: underline;
+    }
+
+    .one{
+      margin-top: 2em;
+      display: flex;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      margin-right: 3em ;
+      margin-left: 4em;
+      justify-content: center;
+      align-items: center;
+      height: 40vh;
+    }
+
+    .one h1{
+      color: wheat;
+      font-size: 5rem;
+      text-align: center;
+    }
+
+    .one h3{
+      text-align: center;
+      color: white;
+      font-family: "Agency FB";
+      letter-spacing: 0.1em;
+      font-size: 20px;
+      line-height: 2em;
+    }
+
+    .offer{
+      color: white;
+      text-transform: capitalize;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 35px;
+      padding: 0;
+      background-color: purple;
+    }
+
+    .two h3{
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      padding-top: 1em;
+      text-transform: capitalize;
+      margin-left: 0.3em;
+      font-family: "Bookman Old Style";
+    }
+
+    .two p{
+      color: white;
+      text-transform: capitalize;
+      text-align: center;
+      font-size: 17px;
+      margin-left: 0.2em;
+      font-family: Arial;
+    }
+
+    footer p{
+      background-color: #e1845c;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 15px;
+      padding: 0.5em;
+    }
+
+    footer{
+      margin-bottom: 0;
+    }
+  </style>
 </head>
 <body>
-<header>
+  <header>
     <nav>
-        <div class="nav_container">
-            <div class="logo_container">
-                <p class="logo">Nexas</p>
-            </div>
-            <div class="nav_items_container">
-                <ul class="list-items">
-                    <li class="list"><a href="" class="nav_link">Home</a></li>
-                    <li class="list"><a href="" class="nav_link">Gallery</a></li>
-                    <li class="list"><a href="" class="nav_link">About</a></li>
-                    <li class="list"><a href="" class="nav_link">Contact</a></li>
-                    <li class="list"><a href="" class="nav_link">CV</a></li>
-                </ul>
-            </div>
-        </div>
-        </nav>
-</header>
+      <div class="nav_list_container">
 
-<div class="section_one">
-    <div class="section_one_child">
-    <p class="intro"><span class="Hi_deco">Hi</span>, I'm wahab. Owner of Nexas
-        -A creative and Result driven in Webdesign, Graphic design, Web-developer and
-        software Engineer.
-        Welcome to my portfolio. Here you'll find collections of my projects,
-        skills, and experiences. I'm passionate about building impactful
-        solutions and always eager to learn, create, and collaborate😉.
-    </p>
-    </div>
-    <div class="section_one_child_2">
-        <img src="PERSON_IMG.png" alt="" class="person">
-    </div>
+        <ul class="list_container">
+          <li id="home"><a href="" class="menu">Home</a></li>
+          <li id="portfolio"><a href="" class="menu">Portfolio</a></li>
+          <li id="about"><a href="" class="menu">About</a></li>
+          <li id="contact"><a href="" class="menu">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="media_con">
+  <div class="img_media_container"><a href="https://wa.link/wr9rae" class="image_media"><img src="WHATSAPP_ICON.png" alt=""></a></div>
+  <div class="img_media_container"><a href="https://x.com/brocode2449?t=HHjA6Hmw_BrYo-P-kPnknw&s=35" class="image_media"><img src="X_ICON.png" alt=""></a></div>
+  <div class="img_media_container"><a href="t.me/bro_code2449" class="image_media"><img src="TELEGRAM_ICON.png" alt=""></a></div>
+  <div class="img_media_container"><a href="mailto:brocode2449@gmail.com" class="image_media"><img src="GMAIL ICON.jpg" alt=""></a></div>
+  <div class="img_media_container"><a href="https://www.linkedin.com/in/wahab-koleosho-a2744b298" class="image_media"><img src="linkedin.png" alt=""></a></div>
 </div>
 
+<section class="one">
+  <div class="one_child">
+    <h1>Explore Our Site.</h1>
+    <h3>Design that speaks. Websites that Perform</h3>
+  </div>
+  </section>
+  <h2 class="offer">what i do</h2>
+  <section class="two">
+   <h3>Web Design & Development</h3>
+    <p>i create responsive, Fast, and Modern Websites</p>
 
-<div class="section_two">
-    <div class="section_two_child">
-        <img src="WEB_DEVELOPER_IMG.jpg" alt="" class="web_developer_img">
-    </div>
-    <div class="section_two_child_2">
-        <p class="intro_2">
-            Focuses on building fast, responsive, and interactive websites that function seamlessly across all platforms.
-            It involves writing clean and scalable code, integrating features, and ensuring that every part of the site runs smoothly
-            to meet the specific needs of users and clients alike.
-        </p>
-    </div>
-</div>
+    <h3>graphics design</h3>
+    <p>from logos to flyers and social media creatives, i design visuals that grab attention and build brand identity</p>
 
-<div class="section_three">
-    <div class="section_three_child">
-    <p class="intro_3">
-       All about creating clean, user-friendly, and visually compelling layouts that not only reflect a brand's identity but
-        also enhance the overall user experience. Every detail—colors, typography, spacing, and structure—is
-        carefully planned to guide visitors and keep them engaged from the first click.
-    </p>
-    </div>
-    <div class="section_three_child_2">
-        <img src="WEB_DESIGN_IMG.jpg" alt="" class="web_design_img">
-    </div>
-</div>
-
-<div class="section_four">
-    <div class="section_four_child">
-    <img src="GRAPHIC_DESIGN_IMG.jpg" alt="" class="graphic_design_img">
-    </div>
-    <div class="section_four_child_2">
-        <p class="intro_4">
-            Combines creativity and communication to produce powerful visuals that speak directly to the audience.
-            From branding and promotional materials to digital art and marketing content, it turns ideas into impactful designs
-            that strengthen brand presence and deliver meaningful messages.
-        </p>
-    </div>
-</div>
-
-<div class="section_five">
-
-<div class="social_media_link_container">
-    <ul class="social_media_list">
-        <li class="media_list"><a href="www.whatsapp.com" class="media_link"><img src="WHATSAPP_ICON.png" alt="" class="media_image"></a></li>
-        <li class="media_list"><a href="https://x.com/brocode2449?t=HHjA6Hmw_BrYo-P-kPnKnw&s=35" class="media_link"><img src="X_ICON.png" alt="" class="media_image"></a></li>
-        <li class="media_list"><a href="t.me/bro_code2449" class="media_link"><img src="TELEGRAM_ICON.png" alt="" class="media_image"></a></li>
-        <li class="media_list"><a href="mailto:brocode2449@gmail.com" class="media_link"><img src="GMAIL ICON.jpg" alt="" class="media_image"></a></li>
-    </ul>
-</div>
-
-<div class="quick_message_container">
-    <form action="" >
-        <input type="text" name="" id="" placeholder="Full name" class="name_input">
-        <input type="email" name="" id="" placeholder="Email" class="email_input">
-        <textarea name="" id="" placeholder="Your Message" class="Quick_Message"></textarea>
-        <input type="button" value="Send➡" class="send_button">
-    </form>
-</div>
-
-</div>
-
+    <h3>Frontend Development</h3>
+    <p>i use HTML, CSS, and javascript to build clean, interactive interfaces for websites and web pages</p>
+  </section>
 </body>
-
 <footer>
-    <div class="footer_container">
-        <ul class="footer_link_list">
-            <li class="footer-list"><a href="PORTFOLIO.html" class="footer_link">Home</a></li>
-            <li class="footer-list"><a href="" class="footer_link">Gallery</a></li>
-            <li class="footer-list"><a href="" class="footer_link">About</a></li>
-            <li class="footer-list"><a href="" class="footer_link">Contact</a></li>
-            <li class="footer-list"><a href="" class="footer_link">CV</a></li>
-        </ul>
-
-        <ul class="footer_link_list">
-            <li class="footer-list"><a href="PORTFOLIO.html" class="footer_link">Home</a></li>
-            <li class="footer-list"><a href="" class="footer_link">Gallery</a></li>
-            <li class="footer-list"><a href="" class="footer_link">About</a></li>
-            <li class="footer-list"><a href="" class="footer_link">Contact</a></li>
-            <li class="footer-list"><a href="" class="footer_link">CV</a></li>
-        </ul>
-
-        <ul class="footer_link_list">
-            <li class="footer-list"><a href="PORTFOLIO.html" class="footer_link">Home</a></li>
-            <li class="footer-list"><a href="" class="footer_link">Gallery</a></li>
-            <li class="footer-list"><a href="" class="footer_link">About</a></li>
-            <li class="footer-list"><a href="" class="footer_link">Contact</a></li>
-            <li class="footer-list"><a href="" class="footer_link">CV</a></li>
-        </ul>
-
-        <ul class="footer_link_list">
-            <li class="footer-list"><a href="PORTFOLIO.html" class="footer_link">Home</a></li>
-            <li class="footer-list"><a href="" class="footer_link">Gallery</a></li>
-            <li class="footer-list"><a href="" class="footer_link">About</a></li>
-            <li class="footer-list"><a href="" class="footer_link">Contact</a></li>
-            <li class="footer-list"><a href="" class="footer_link">CV</a></li>
-        </ul>
-    </div>
+  <p>&copy 2025 NexaGraphics. All right reserve</p>
 </footer>
 </html>
